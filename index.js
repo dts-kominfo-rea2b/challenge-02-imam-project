@@ -26,8 +26,8 @@ function lakukanLooping(arrPegawai) {
   let hasilLooping = [];
 
   for (let i = 0; i < dataYangAkanDilooping.length; i++){
-      let data = (`${dataYangAkanDilooping[i].namaDepan} ${dataYangAkanDilooping[i].namaBelakang}`)
-      hasilLooping.push(data);
+      let fullName = (`${dataYangAkanDilooping[i].namaDepan} ${dataYangAkanDilooping[i].namaBelakang}`)
+      hasilLooping.push(fullName);
   } 
 
   /*
@@ -36,9 +36,9 @@ function lakukanLooping(arrPegawai) {
   */
   let jumlahPria = 0;
 
-  for ( let i = 0; i < dataYangAkanDilooping.length; i++) {
-    if ( dataYangAkanDilooping[i].jenisKelamin == "M"); {
-      jumlahPria = jumlahPria+1;
+  for (let i = 0; i < dataYangAkanDilooping.length; i++) {
+    if (dataYangAkanDilooping[i].jenisKelamin == 'M') {
+      jumlahPria++
     }
   }
 
@@ -48,9 +48,9 @@ function lakukanLooping(arrPegawai) {
   */
   let jumlahWanita = 0;
 
-  for ( let i = 0; i < dataYangAkanDilooping.length; i++) {
-    if (dataYangAkanDilooping[i].jenisKelamin == "F"); {
-      jumlahWanita= jumlahWanita+1;
+  for (let i = 0; i < dataYangAkanDilooping.length; i++) {
+    if (dataYangAkanDilooping[i].jenisKelamin == 'F') {
+      jumlahWanita++
     }
   }
   /*
@@ -64,7 +64,7 @@ function lakukanLooping(arrPegawai) {
       Apabila imbang, maka komentar akan berisi:
         "Jumlah Pria dan Wanita berimbang"
   */
-  let komentar = ""
+  let komentar = "";
   if (jumlahPria > jumlahWanita) {
     komentar = "Jumlah Pria lebih banyak dari Wanita"
   } else if (jumlahPria < jumlahWanita) {
