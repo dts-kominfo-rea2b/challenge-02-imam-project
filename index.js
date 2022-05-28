@@ -15,7 +15,7 @@ const arrayObjectPegawai = require("./data-customer.json")
 
 function lakukanLooping(arrPegawai) {
   // ! JANGAN DIMODIFIKASI
-  let dataYangAkanDilooping = arrPegawai
+  let dataYangAkanDilooping = arrPegawai;
 
   /*
     TODO 1: Buatlah sebuah variabel bernama "hasilLooping" 
@@ -24,8 +24,8 @@ function lakukanLooping(arrPegawai) {
       Contoh: ["Aisyah Nirmala", "Mansur Faisal", ...]
   */
   let hasilLooping = [];
-  
-  for(let i = 0; i<dataYangAkanDilooping.length; i++){
+
+  for (let i = 0; i < dataYangAkanDilooping.length; i++){
       let data = (`${dataYangAkanDilooping[i].namaDepan} ${dataYangAkanDilooping[i].namaBelakang}`)
       hasilLooping.push(data);
   } 
@@ -37,7 +37,7 @@ function lakukanLooping(arrPegawai) {
   let jumlahPria = 0
 
   for (i = 0; i < dataYangAkanDilooping.length; i++) {
-    if (dataYangAkanDilooping(i).jenisKelamin == "M"); {
+    if ( dataYangAkanDilooping[i].jenisKelamin == "M"); {
       jumlahPria++;
     }
   }
@@ -49,7 +49,7 @@ function lakukanLooping(arrPegawai) {
   let jumlahWanita = 0
 
   for (i = 0; i < dataYangAkanDilooping.length; i++) {
-    if (dataYangAkanDilooping(i).jenisKelamin == "F"); {
+    if (dataYangAkanDilooping[i].jenisKelamin == "F"); {
       jumlahWanita++;
     }
   }
