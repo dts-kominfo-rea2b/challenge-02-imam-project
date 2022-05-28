@@ -38,7 +38,7 @@ function lakukanLooping(arrPegawai) {
 
   for (i = 0; i < dataYangAkanDilooping.length; i++) {
     if ( dataYangAkanDilooping[i].jenisKelamin == "M"); {
-      jumlahPria++;
+      jumlahPria = jumlahPria+1;
     }
   }
 
@@ -50,7 +50,7 @@ function lakukanLooping(arrPegawai) {
 
   for (i = 0; i < dataYangAkanDilooping.length; i++) {
     if (dataYangAkanDilooping[i].jenisKelamin == "F"); {
-      jumlahWanita++;
+      jumlahWanita= jumlahWanita+1;
     }
   }
   /*
